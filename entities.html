@@ -11,19 +11,43 @@
                 margin: 0 0.5rem ;
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             }
-
+            article{
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                justify-content: space-evenly;
+                align-items: baseline;
+                gap: 1rem
+            }
+            article div{
+                margin: 0.5rem
+            }
+            article h2{
+                border-bottom: 2px solid black
+            }
+            .main-title{
+                text-align: center;
+                padding: 1rem    
+            }
+            .main-title h1{
+                margin: 2rem auto 1rem;
+            }
         </style>
     </head>
     <body>
         <main>
-            <h1>Entities</h1>
+            <div class="main-title">
+                <h1>Entities</h1>
+            </div>
             <article>
-                <h2>Arrows</h2>
-                <div><span>UP</span><span class="entity">&uarr;</span></div>
-                <div><span>Right</span><span class="entity">&rarr;</span></div>
-                <div><span>Down</span><span class="entity">&darr;</span></div>
-                <div><span>Left</span><span class="entity">&larr;</span></div>
-
+                <div>
+                    <h2>Arrows</h2>
+                    <div><span>UP</span><span class="entity">&uarr;</span></div>
+                    <div><span>Right</span><span class="entity">&rarr;</span></div>
+                    <div><span>Down</span><span class="entity">&darr;</span></div>
+                    <div><span>Left</span><span class="entity">&larr;</span></div>
+                </div>
+                <div>
                 <h2>Math Signs</h2>
                 <div><span>Plus</span><span class="entity">&plus;</span></div>
                 <div><span>Minus</span><span class="entity">&minus;</span></div>
@@ -32,25 +56,27 @@
                 <div><span>Equal</span><span class="entity">&equals;</span></div>
                 <div><span>Less-than</span><span class="entity">&lt;</span></div>
                 <div><span>Greater-than</span><span class="entity">&gt;</span></div>
-
+                </div>     
+                <div>
                 <h2>Dashes</h2>
                 <div><span>EN dash</span><span class="entity">&ndash;</span></div>
                 <div><span>EM dash</span><span class="entity">&mdash;</span></div>
-
+                </div>      
+                <div>
                 <h2>Copyright </h2>
                 <div><span>Copyright</span><span class="entity">&copy;</span></div>
-
-                
+                </div>
+                <div>
                 <h2>The Poker suits </h2>
                 <div><span>Hearts</span><span class="entity">&hearts;</span></div>
                 <div><span>Diamonds</span><span class="entity">&diams;</span></div>
                 <div><span>Spades</span><span class="entity">&spades;</span></div>
                 <div><span>Clubs</span><span class="entity">&clubs;</span></div>
-
-                                
+                </div>                
+                <div>
                 <h2>Whitespaces</h2>
                 <div><span>Whitespace</span><span class="entity">|&#32;|&nbsp;|</span></div>
-
+                </div>
             </article>
         </main>
     </body>
